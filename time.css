@@ -104,3 +104,9 @@ a {
 #top {
   margin-top: 10vh;
 }
+
+#triage {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 15px;
+}
