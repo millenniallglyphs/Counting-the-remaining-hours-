@@ -3,23 +3,20 @@
   src: url(assets/Canela-Light.ttf);
 }
 
-@keyframes slide {
-  from { left: 100%;}
-  to { left: -100%;}
-}
-@-webkit-keyframes slide {
-  from { left: 100%;}
-  to { left: -100%;}
-}
 
 html {
   background-color: black;
   font-weight: 100;
 }
 
+div {
+  line-height: 1.6;
+}
+
 a {
-  font-weight: 400;
+  font-weight: 100;
   color: white;
+  text-decoration-line: underline;
 }
 
 .big {
@@ -27,36 +24,7 @@ a {
   font-weight: 100;
 }
 
-.runninghead {
-  font-family: 'IBM Plex Mono', monospace;
-  color: white;
-  padding: 10px;
-  padding-bottom: 15px;
-  /*border-bottom: 1px solid white;*/
-  overflow-x: hidden;
-  width: 97.5%;
-  margin: auto;
-}
 
-.realnow {
-  width: 110%;
-  font-family: "Canela", serif;
-  position:absolute;
-  top:0;
-  left:0;
-  animation-name: slide;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: slide;
-  -webkit-animation-duration: 30s;
-  -webkit-animation-timing-function:linear;
-  -webkit-animation-iteration-count: infinite;
-}
-
-#runner {
-  overflow-x: scroll;
-}
 
 .timedown {
   margin-top: 3vh;
@@ -98,7 +66,7 @@ a {
 }
 
 #longing {
-  height: 80vh;
+  height: 20vh;
 }
 
 #top {
@@ -109,4 +77,21 @@ a {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+ #triage {
+  width: 90%;
+  margin: auto;
+  }
+  
+  #bottom {
+  width: 90%;
+  margin: auto;
+  }
+  
+  .timedown {
+    width: 90%;
+  margin: auto;
+  }
 }
